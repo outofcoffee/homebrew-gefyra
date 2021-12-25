@@ -5,20 +5,20 @@
 class Gefyra < Formula
   desc "Redis bridge for channels and lists."
   homepage "https://github.com/outofcoffee/gefyra"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/outofcoffee/gefyra/releases/download/v0.1.2/gefyra_0.1.2_macOS_x86_64.tar.gz"
-      sha256 "3caf5aaf90b4569c27a706f2dafc4b0474439cd84ee8765e45f6ca5b60491e95"
+      url "https://github.com/outofcoffee/gefyra/releases/download/v0.1.3/gefyra_0.1.3_macOS_x86_64.tar.gz"
+      sha256 "db5461640fd2ef5e5899e08cbaf152a623c9d72516799a5930529f1ea87eedd0"
 
       def install
         bin.install "gefyra"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/outofcoffee/gefyra/releases/download/v0.1.2/gefyra_0.1.2_macOS_arm64.tar.gz"
-      sha256 "117ff7a1a3159b5ffc54d42ab15ccfe3e6368710fcc2942f48fcfab92956bc81"
+      url "https://github.com/outofcoffee/gefyra/releases/download/v0.1.3/gefyra_0.1.3_macOS_arm64.tar.gz"
+      sha256 "15eb8ded02d0c392189c7bd574da2055e66d1c31fe861cb320197fbd801726c6"
 
       def install
         bin.install "gefyra"
@@ -28,24 +28,24 @@ class Gefyra < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/outofcoffee/gefyra/releases/download/v0.1.2/gefyra_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "0c518d9d67b0b3d8623bc1f5fe1e5c6ce3305822b6d40327890f721e0bcacc65"
+      url "https://github.com/outofcoffee/gefyra/releases/download/v0.1.3/gefyra_0.1.3_Linux_x86_64.tar.gz"
+      sha256 "08630874dd10c2b3a41087161b47297edeb17bc223ec5862f6cec9b59a948641"
 
       def install
         bin.install "gefyra"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/outofcoffee/gefyra/releases/download/v0.1.2/gefyra_0.1.2_Linux_armv6.tar.gz"
-      sha256 "41bfffa3bb80912160e3acfcc08f7586a8ce8e167ee115880f96704157ee9b3e"
+      url "https://github.com/outofcoffee/gefyra/releases/download/v0.1.3/gefyra_0.1.3_Linux_armv6.tar.gz"
+      sha256 "b201a9fd2c6b74c0655c9a6530b60a4fcbb8cd1fca58bf774e7f2ae51d72866b"
 
       def install
         bin.install "gefyra"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/outofcoffee/gefyra/releases/download/v0.1.2/gefyra_0.1.2_Linux_arm64.tar.gz"
-      sha256 "34ffa744a3c14544d46067867cb172eb5dffc21947f6776c854d1de1d29da987"
+      url "https://github.com/outofcoffee/gefyra/releases/download/v0.1.3/gefyra_0.1.3_Linux_arm64.tar.gz"
+      sha256 "eeb54f56c29112750dbb4cd6cd58bbc6333c28005ed0571f49f64b2b6a114e33"
 
       def install
         bin.install "gefyra"
